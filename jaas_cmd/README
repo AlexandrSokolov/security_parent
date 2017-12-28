@@ -1,0 +1,14 @@
+JAAS authentication example, uses code from:
+JAAS Authentication Tutorial
+https://docs.oracle.com/javase/7/docs/technotes/guides/security/jaas/tutorials/GeneralAcnOnly.html
+
+JAAS Authorization is not considered here, as deprecated option.
+JAAS Authorization Tutorial
+https://docs.oracle.com/javase/7/docs/technotes/guides/security/jaas/tutorials/GeneralAcnAndAzn.html
+
+Java Authentication and Authorization Service (JAAS) Reference Guide
+https://docs.oracle.com/javase/7/docs/technotes/guides/security/jaas/JAASRefGuide.html
+
+JavaTM Authentication and Authorization Service (JAAS)
+LoginModule Developer's Guide
+https://docs.oracle.com/javase/6/docs/technotes/guides/security/jaas/JAASLMDevGuide.html

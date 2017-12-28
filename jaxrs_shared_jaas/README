@@ -1,0 +1,15 @@
+We have 2 war applications, deployed to the same server.
+We are authenticated/authorized in one web application.
+In the 2nd application we can access it without login/password
+
+In order to do it, the following reuquements must be met:
+1.  Both war files must be in the same security-domain.
+    this is controlles via src/main/webapp/WEB-INF/jboss-web.xml file:
+    <?xml version="1.0" encoding="UTF-8"?>
+    <jboss-web>
+        <context-root>/jaasSharedWeb</context-root>
+        <security-domain flushOnSessionInvalidation="true">myCustom</security-domain>
+    </jboss-web>
+2.  Wildfly must be configured in standalone-full.xml to support single-sign-on:
+    <host name="default-host" alias="localhost">
+        <single-sign-on path="/"/>

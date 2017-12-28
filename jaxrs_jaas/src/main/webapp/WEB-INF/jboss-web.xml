@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+    <context-root>/jaasWeb</context-root>
+    <security-domain flushOnSessionInvalidation="true">myCustom</security-domain>
+</jboss-web>
